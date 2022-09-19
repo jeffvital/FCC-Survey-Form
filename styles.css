@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
+
+:root {
+  --surform-color: rgb(233, 10, 114);
+  --font-color: white;
+  --body-background: linear-gradient(to right, #cc2185, #5717bf);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--body-background);
+  color: var(--font-color);
+}
+
+.text-center {
+  text-align: center;
+}
+
+#description {
+  text-align: center;
+  font-style: italic;
+  text-shadow: 1px 1px 1px black;
+}
+
+label {
+  display: flex;
+  align-items: center;
+}
+
+#survey-form {
+  background: var(--surform-color);
+  padding: 0.8rem 0.8rem;
+  border-radius: 0.25rem;
+  margin: 30px 20px;
+}
+
+.submit-button:hover {
+  background-color: 5717bf;
+  color: white;
+}
+
+.submit-button,
+button {
+  display: block;
+  width: 100%;
+  padding: 0.6rem;
+  background: rgb(255, 255, 255);
+  color: black;
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+}
+
+.form-group {
+  display: block;
+  margin: 10px 10px;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  color: #495057;
+  background-color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+.box-input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+.input-textarea {
+  width: 100%;
+  padding: 20 30px;
+}
+
+@media screen and (max-width: 300px) {
+  body,
+  button {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .form-control {
+    height: 1px;
+  }
+}
+
+.container {
+  margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+  .container {
+    max-width: 520px;
+  }
+}
+
+#comments {
+  font-size: 0.8rem;
+  font-family: "Poppins", "sans-serif";
+  width: 100%;
+  border: none;
+  border-radius: 0.5rem;
+}
